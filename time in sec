@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class time{
+	public:
+		int hours;
+		int minutes;
+		int seconds;
+		string time;
+	void printtime(){
+		cout<<"Time in total seconds: "<<seconds+minutes*60+hours*3600;
+		
+	}
+};
+int main(){
+	time obj;
+	cout<<"Hours?";
+	cin>>obj.hours;
+	cout<<"\nMinutes?";
+	cin>>obj.minutes;
+	cout<<"\nSeconds?";
+	cin>>obj.seconds;
+	cout<<"\nThe time is: ";
+	cin>>obj.time;
+	obj.printtime();
+	return 0;
+}
